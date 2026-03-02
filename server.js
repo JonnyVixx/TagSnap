@@ -6,6 +6,8 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+console.log('API KEY CHECK:', process.env.ANTHROPIC_API_KEY ? 'FOUND' : 'MISSING');
+
 const PROMPT = `You are helping an eBay shoe reseller find the style code on a shoe tag. This code is what they'll search on eBay sold listings.
 
 BRAND-SPECIFIC PATTERNS — memorize these:
